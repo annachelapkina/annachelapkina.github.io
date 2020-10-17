@@ -1,72 +1,89 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="UTF-8">
-<title> Страница </title>
-</head>
-<style type="text/css">
-    body
-
-{
-background: url(2.jpg) 100% no-repeat;
-background-size: cover;
-color: Black;
-text-align: center;
-font-weight: bolder;
-    text-align: center;"
+ <head>
+ <title>А ты успешный руководитель?</title>
+ </head>
+ <style type="text/css">
+body {
+         background: url(1.jpg) no-repeat;
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+     }
+ a{
+    color:#8B0000;
+    line-height: 2; /*интервал между заголовком и подчеркиванием, заголовком и границами старницы*/
+    text-decoration:none; /*убирает стандартное подчеркивание ссылки*/
+    cursor: pointer; /*изменяет вид курсора при наведении на блок*/
+    position:relative; /*устанавливает длину подчеркивания в зависимости от длины текстовой строки (иначе подчеркивается вся строка во весь экран)*/
 }
-
-.block
-{
-width: 200px;
-height: 200px;
-background: url(fon3.jpg);
-margin: 0 auto;
-padding: 10px;
-position: relative;
-float: left;
+a:after {
+    background-color: #8B0000;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0px;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
 }
-
-.block img {
-margin: 0 auto;
-display: block;
-height: 175px;
-width: 175px;
-}
-
-</style>
-<body>
-<table width="1000" Border= "1" Cellpading ="0" Cellspacing="0" background="1.jpg" align="center">
-    <TR>
-<TH>ЙОЖИКИ</TH>
-<TH>СОБАКИ</TH>
-<TH>БАКЛАНЫ</TH>
-    </TR>
-    <TR>
-        <TD>маленькие</TD>
-        <TD>в меру умные</TD>
-        <TD>упёртые</TD>
-    </TR>
-    <TR>
-        <TD>запуганные</TD>
-        <TD>в меру наглые</TD>
-        <TD>уверенные </TD>
-    </TR>
-    <TR>
-        <TD>но такие жизнерадостные</TD>
-        <TD>в меру воспитанные</TD>
-        <TD>с горящими глазами</TD>
-    </TR>
-</table>
-<H1>Стадии уировцев, по мнению О.Б. Плюща</H1>
-
-<div>
-    <div class="block"><img src="123.jpg"><p>1 стадия - ЙОЖИКИ. <br /> Ничего не понимают. Сказать ничего не могут (1 курс) </div>
-
-<div class="block"><img src="4OJP.gif"><p>2 стадия - СОБАКИ.  <br />Что-то понимают, но сказать не могут. (2-3 курс)</div>
-
-<div class="block"><img src="kisspng-flightless-bird-penguin-flightless-cormorant-water-bird-5ac11361639f95.4095909415226028494081.png"><p>3 стадия - БАКЛАНЫ. <br /> Всё понимают и умело выражают свои мысли (4 курс)</div>
-
-</div>
-</body>
+a:hover:after,
+a:focus:after {
+    width: 100%;
+} /*живое подчеркивание*/
+ </style>
+ <body>
+     <div style="margin-bottom: 50px;
+                 font-size: 40px;
+                 text-align: center;">
+     Признаки
+     <a href="лаб 3.2.html">успешного руководителя</a>
+    </div>
+     <div style="width: 1000px;
+                      background-color: #E6E6FA;
+                      border: 1px solid #000000;
+                     color: #4B0082;
+                     padding: 30px;
+                     text-align: center;
+                     font-family: Times;
+                     font-weight: bold;
+                     font-style: italic;
+                     font-size: 20px;
+                     margin-top: 10px;
+                     margin-left: 250px">
+     Признак первый: хороший руководитель – это человек, который ведет за собой. Это не значит, что он должен бегать с флагом или громко говорить. Есть настоящие лидеры, которые тихо и спокойно разговаривают, которые не стремятся выделиться. Но когда ты общаешься с таким человеком, у тебя возникает стойкое ощущение: он лидер. Или не возникает.
+     </div>
+     <div style="width: 1000px;
+                      background-color: #EADCEA;
+                      border: 1px solid #000000;
+                     color: #C71585;
+                     padding: 30px;
+                     text-align: center;
+                     font-family: Arial;
+                     font-style: italic;
+                     font-size: 20px;
+                     margin-top: 50px;
+                     margin-left: 250px">
+     Признак второй: у хорошего начальника всегда есть воодушевляющая цель. Это не может быть цель заработать себе много денег или что-то подобное. Воодушевлять эта цель должна не только его, но и всех его сотрудников и коллег. Наличие такой цели, которая объединяет организацию, подразделение, компанию, – важнейшее свойство хорошего начальника.
+     </div>
+     <div style="width: 1000px;
+                      background-color: #EAE7DC;
+                      border: 1px solid #000000;
+                     color: #8B4513;
+                     padding: 30px;
+                     text-align: center;
+                     font-family: Courier;
+                     font-weight: bold;
+                     font-size: 20px;
+                     margin-top: 50px;
+                     margin-left: 250px">
+    Признак третий: хороший начальник достигает результата. Людям нравится побеждать, настоящие команды складываются тогда, когда сообща достигают результата. Настоящим хорошим начальником человек становится только тогда, когда вместе с ним, а не вопреки ему организация достигает результата.
+     </div>
+ </body>
 </html>
