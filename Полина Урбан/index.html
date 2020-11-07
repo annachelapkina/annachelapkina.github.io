@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Хто я?</title>
+    <style>
+
+    p1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+font-size: 35px;
+
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+}
+<p1>
+
+        html {
+    background: #ccc;
+    min-height: 100%;
+    font-family: sans-serif;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    margin: 50;
+    padding: 0 15px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+a {
+    color: #1194c4;
+    text-decoration:underline;
+}
+a:hover {
+    text-decoration: none;
+}
+:focus {
+    outline: none;
+}
+img {
+    border: 0;
+}
+h1 {
+    margin-top: 0;
+}
+}
+.header-tright {
+    background: #222;
+    min-height: 50px;
+    font-size: 1.5rem;
+    color: #eee;
+    margin-bottom: 40px;
+    flex-basis: 300px;
+
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-bottom {
+    background: #222;
+    min-height: 50px;
+    font-size: 1.5rem;
+    color: #eee;
+    flex-basis: 100%;
+
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        .who{
+            margin-bottom: 100px;
+        }
+
+.main {
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    margin: auto;
+    flex: auto;
+    box-sizing: border-box;
+}
+.grid {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.grid-itm {
+    margin-bottom: 30px;
+    flex-basis: calc(33.33% - 30px * 2/3);
+
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-img {
+    margin: 0 auto 20px;
+    flex: 0 1 80%;
+}
+.grid-cont{
+    flex: 0 1 100%;
+}
+.grid-title {
+    text-align: center;
+}
+
+.footer {
+    background: #222;
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    color: #eee;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .header-tright {
+        display: none;
+    }
+    .grid-itm {
+        flex-wrap: nowrap;
+        flex-basis: 100%;
+    }
+    .grid-img {
+        flex: 0 0 auto;
+    }
+    .grid-itm:nth-child(even) .grid-img {
+        margin: 0 0 0 30px;
+        order: 2;
+    }
+    .grid-itm:nth-child(odd) .grid-img {
+        margin: 0 30px 0 0;
+
+    }
+    .grid-cont {
+        flex: 1 1 auto;
+    }
+    .grid-title {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid-img {
+        display: none;
+    }
+}
+        .first{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+        .img{
+    transition: 1s;
+}
+
+.img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+body {background:url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)}
+a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 12px 40px;
+  margin: 10px 20px;
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
+  transition: .5s;
+}
+a:hover {
+  box-shadow: 0 0 0 0 rgba(0,40,120,0);
+  background-position: 0 0;
+}
+
+    </style>
+</head>
+<body>
+<div1 class="who">
+    <p1>Кто такая Полина Урбан?????</p1>
+    </div1>
+
+    <div class="container">
+
+        <div class="first">
+            <div class="img-container"><img class="img" src="1.jpg"width="450" height="750" alt=""  > </div>
+            <div class="img-container"><img class="img" src="9.jpg"  width="450" height="750" alt="" ></div>
+            <div class="img-container"><img class="img" src="8.jpg"  width="450" height="750" alt="" ></div>
+        </div>
+    </div>
+
+
+     <div class="first">
+            <div class="img-container"><img class="img" src="2.jpg"  width="450" height="750" alt=""> </div>
+            <div3>
+                <p>Что бы не случилось в твоей жизни - знай: У Полины есть на этот случай картинка. Находится это сокровище в инсте. Есть проблемка - вход только по приглашению! </p>
+            </div3>
+        </div>
+
+
+    <a href="">Хочешь узнать больше про Полину Урбан? Жми на кнопку!</a>
+
+    <main class="main">
+        <div class="grid">
+            <div class="grid-itm">
+                <img src="6.jpg" width="200" height="400" alt="" class="grid-img, scale" class="scale">
+                <div class="grid-cont">
+                    <h1 class="grid-title">Хранитель очага "Мем УИР"</h1>
+                    <p>Что бы не случилось в твоей жизни - знай: У Полины есть на этот случай картинка. Находится это сокровище в инсте. Есть проблемка - вход только по приглашению! </p>
+                </div>
+            </div>
+            <div class="grid-itm">
+                <img src="4.jpg" width="300" height="200" alt="" class="grid-img" class="scale">
+                <div class="grid-cont">
+                    <h1 class="grid-title">Человек, который ОБОЖАЕТ сессию!</h1>
+                    <p>Да-да, именно этот человек нервничает из-за, что ничего не учил, а в зачётке одни 9))) Учитесь, пацаны!</p>
+                </div>
+            </div>
+            <div class="grid-itm">
+                <img src="7.jpg" width="200" height="200" alt="" class="grid-img" class="scale">
+
+                <div class="grid-cont">
+                    <h1 class="grid-title">Человек, у которого есть ВСЕ платные стикеры</h1>
+                    <p>Все слышали про лишение стипендии из-за 5 пропущенных пар?? Так вот знайте: ваши стипухи идут на стикеры Полине))))</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        СПАСИБО ЗА ВНИМАНИЕ!
+    </footer>
+
+</body>
+</html>
