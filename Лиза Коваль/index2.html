@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>В мире животных</title>
+    <link rel="stylesheet" type="text/css" href="css/4.css">
+    <style>@charset "utf-8";
+html {
+    background: #F8ECC9;
+    min-height: 100%;
+    font-family: sans-serif;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    margin: 0;
+    padding: 0 15px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+
+h1 {
+    margin-top: 0;
+}
+
+
+.main {
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    margin: auto;
+    flex: auto;
+    box-sizing: border-box;
+}
+.box {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-style: italic;
+    margin: 0 0 40px -50px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box-base {
+    margin-left: 50px;
+    flex: 1 0 430px;
+}
+.box-side {
+    margin-left: 50px;
+    flex: none;
+}
+.box-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    margin-bottom: 30px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {background: #F1E2D0;}
+a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  margin: 10px;
+  color: black;
+  box-shadow: 0 0 0 2px black;
+  padding: 20px 0;
+  width: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  overflow: hidden;
+
+}
+span {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 5;
+    text-align: center;
+}
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+a:before{
+  transform: translateX(-100%);
+  background: white;
+  transition: transform .3s cubic-bezier(.55,.055,.675,.19);
+}
+a:after {
+  background: #DE7454;
+  transform: translateX(100%);
+  transition: transform .3s cubic-bezier(.16,.73,.58,.62) .3s;
+}
+a:hover:before,
+a:hover:after {transform: translateX(0);}
+
+
+        .button-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+         .scale {
+    transition: 1s; /* Время эффекта */
+   }
+   .scale:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
+
+</style>
+</head>
+<body>
+    <main class="main">
+        <div class="box">
+            <div class="box-base">
+                <h1>Белка обыкновенная</h1>
+                <p>БЕЛКА ОБЫКНОВЕННАЯ (Sciurus vulgaris). Вавёрка звычайная. Это мелкий зверек типично беличьего облика, с вытянутым стройным телом и пушистым хвостом с «расчёсом». Длина её тела 19,5—28 см, хвоста — 13—19 см (примерно 2/3 длины тела); вес 250—340 г. Голова округлая, с большими чёрными глазами. Уши длинные, с кисточками, особенно выраженными в зимний период. На мордочке, передних лапах и брюхе растут чувствительные вибриссы. Задние конечности заметно длиннее передних. Пальцы с цепкими острыми когтями. Волосы по бокам хвоста достигают длины в 3—6 см, отчего хвост имеет уплощённую форму.
+
+</p>
+            </div>
+            <div class="box-side">
+                <img src="14.jpg" width="600" height="400" class="box-img" alt="" class="scale">
+            </div>
+        </div>
+    </main>
+
+    <div class="button-wrapper">
+     <a href=""><span>Узнать больше</span></a>
+</div>
+</body>
+</html>
