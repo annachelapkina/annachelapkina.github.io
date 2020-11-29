@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poli</title>
+
+<script type="text/javascript">
+window.alert("Здравствуйте!");
+</script>
+
+<script type="text/javascript">
+var a;
+if (navigator.userAgent.search(/Safari/) > 0) {a = 'Safari'};
+if (navigator.userAgent.search(/Firefox/) > 0) {a = 'MozillaFirefox'};
+if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {a = 'Internet Explorer'};
+if (navigator.userAgent.search(/Chrome/) > 0) {a = 'Google Chrome'};
+if (navigator.userAgent.search(/YaBrowser/) > 0) {a = 'Яндекс браузер'};
+if (navigator.userAgent.search(/OPR/) > 0) {a = 'Opera'};
+if (navigator.userAgent.search(/Konqueror/) > 0) {a = 'Konqueror'};
+if (navigator.userAgent.search(/Iceweasel/) > 0) {a = 'Debian Iceweasel'};
+if (navigator.userAgent.search(/SeaMonkey/) > 0) {a = 'SeaMonkey'};
+if (navigator.userAgent.search(/Edge/) > 0) {a = 'Microsoft Edge'};
+alert(a);
+</script>
+
+ <script>
+    'use strict';
+    let name = prompt("Ваше имя?", "");
+    alert(name);
+  </script>
+
+    <style>
+
+        img {
+    border-radius: 10px;
+    transition: all .1s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px #C8D9EB;
+    border-radius: 10px;
+}
+
+#bottom {
+    position: relative;
+    margin: 5% 10% 0 10%;
+    width: 80%;
+    display: block;
+}
+
+.imgs {
+    position: absolute;
+    text-align: center;
+}
+
+#bottom img {
+    padding: 5px;
+}
+    ul#menu li a {
+    display: block;
+    width: 380px;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    background: #EF98AA;
+    margin-left: 70px;
+}
+.block {
+  position: relative;
+  width: 550px;
+  height: 900px;
+  background: white;
+}
+.block .block {
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 50%;
+  margin-top: 20px;
+  position: absolute;
+}
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+    .topbox {
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      top: 0%;
+      left: 0;
+      margin-top: -35px;
+      z-index: 999;
+    }
+
+    .top {
+
+      font-size: 250%;
+      font-family: monospace;
+      padding: 5px;
+      background-color: red;
+      box-shadow: 1px 1px 20px orange;
+
+    }
+
+    .txt {
+      position: absolute;
+      left: 50%;
+      width: 600px;
+      text-align: justify;
+      top: 140%;
+      box-shadow: 0px 0px 6px black;
+      border-radius: 8px;
+      background-color: #BAE3F2;
+    }
+
+    .op {
+      font-family: monospace;
+      font-size: 23px;
+      padding: 0px 15px 5px 15px;
+    }
+
+        .level_1{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    background: url("alexander-wende-vwEb59umuv8-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 0px 5vw 5vw #e7fdff;
+    padding-bottom: 20%;
+    margin-bottom: 5%;
+}
+
+  .country_title{
+    font-family: 'Roboto Slab', serif;
+    color: #d1af63;
+
+    text-shadow: 1px 1px white,
+                 2px 2px #777;
+    font-size:12.5vw;
+  }
+
+  .country_title:after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 55%;
+    margin: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width .5s ease-in-out;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.country_title:hover:after  {
+    width: 20%;
+    background-color: #88596B;
+}
+
+
+  .text_1{
+    background-color: #88596B;
+    padding: 5%;
+    font-family: 'Open Sans';
+    border: 0;
+    text-align: center;
+    width: 50%;
+    margin: 10% auto;
+    font-size:1.7vw;
+    color: #fff;
+    opacity: 0.9;
+    border-radius: 20px;
+  }
+    </style>
+</head>
+<body>
+ <ul id="menu">
+    <li><a href="https://vk.com/polya.ro16">Романовская</a></li>
+    <li><a href="https://vk.com/polya.ro16">Полина</a></li>
+    <li><a href="https://vk.com/polya.ro16">Дмитриевна</a></li>
+</ul>
+
+<div class="level_1">
+      <div class="text_1" >
+Полина Романовская - главная мамка уира-1. <br> Никогда не бросит группу. Всегда поможет и поддержит. Обожает Академию и своих друзей. А ещё Полина пишет прекрасные стихи &darr;
+</div>
+</div>
+
+
+
+<div class="container">
+  <img src="1.jpg" width="550px" height="900px" alt="" class="image">
+  <div class="overlay">Inst: p_oli1</div>
+</div>
+
+
+  <div class="txt">
+
+    <p class="op">Так трудно нам найти любовь.
+Того кто будет всегда рядом.
+Чье имя будем вновь и вновь.
+Мы повторять, и искать взглядом.
+<br><br>
+Любовь... как яркий цвет сирени.
+Как песня птички, шум морей.
+Как звук прекраснешей свирели.
+Как облик маленьких детей.
+<br><br>
+То, для чего мы все живем.
+К чему стремимся повсеместно.
+Судьба не съест тебя живьем.
+Если идти будете вместе.
+<br><br>
+Если любовь в твоей груди.
+Не будешь сломлен никогда.
+Уверенно можешь идти.
+Туда, куда ведет судьба!
+<br><br>
+И для чего нам эти деньги.
+Этот невиданный успех.
+Если никто не ждет у двери.
+Никто не рад слышать твой смех??
+<br><br>
+Цени те чувства, сохрани их.
+Рукой любимого коснись.
+Закрой глаза и ветром сильным.
+К дороге жизни ты примкнись.
+ </p>
+  </div>
+
+<div id="bottom">
+        <h2 style="letter-spacing: 5px; text-align:center">Фоточки Полины</h2>
+         <div class="imgs">
+             <img src="2.jpg" width="300px" height="300px">
+             <img src="3.jpg" width="300px" height="300px">
+             <img src="4.jpg" width="300px" height="300px">
+             <img src="8.jpg" width="300px" height="300px">
+             <img src="9.jpg" width="300px" height="300px">
+             <img src="11.jpg" width="300px" height="300px">
+             <img src="13.jpg" width="300px" height="300px">
+             <img src="5.jpg" width="300px" height="300px">
+             <img src="6.jpg" width="300px" height="300px">
+         </div>
+     </div>
+
+
+</body>
+</html>
