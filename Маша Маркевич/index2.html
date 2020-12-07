@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+
+#nav7, #nav7 ul, #nav7 li {
+margin: 0;
+padding: 0;
+}
+#nav7, #nav7 ul {
+background: rgb(46,95,122);
+}
+#nav7 {
+position: relative;
+display: table;
+width: 100%;
+}
+#nav7 ul {
+position: absolute;
+z-index: 5;
+display: none;
+}
+#nav7 li:hover ul {
+display: block;
+}
+#nav7 li {
+display: table-cell;
+text-align: center;
+}
+#nav7 ul li {
+display: block;
+text-align: left;
+}
+#nav7 .right {
+direction: rtl;
+}
+#nav7 .right ul {
+right: 0;
+}
+#nav7 .right li {
+direction: ltr;
+}
+#nav7 a {
+display: block;
+padding: 3px 0;
+color: #fff;
+text-decoration: none;
+}
+#nav7 ul a {
+padding: 3px 15px;
+}
+#nav7 li:hover {
+background: rgb(96,145,172);
+}
+body {
+    background: url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)}
+
+.container{
+    margin-top: 55px;
+}
+        .first{
+    width: 100%;
+    display: flex;
+            justify-content: space-between;}
+        .text{
+            margin-right: 30%;
+            padding-top: 15%;
+            margin-left: 10%;
+            font-size:25px;
+        }
+
+.img{
+    transition: 1s;
+}
+
+.img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.photo{
+    margin-top: 55px;
+      position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 4px;
+  font-size: 50px;
+  color: antiquewhite;
+  font-weight: bolder;
+  font-family: 'Merriweather', serif;
+}
+
+.imgg{
+    filter: blur(5px);
+    background:#000;
+    opacity:7.4;
+    filter: brightness(55%);
+}
+
+</style>
+</head>
+<body>
+<ul id="nav7">
+<li><a href="https://vk.com/mmmarkevich">Машка Маркевич</a>
+<li><a href="https://oz.by/books/more1020251.html">Любимая книга</a>
+<ul>
+<li><a href="https://oz.by/books/more1020251.html">Мужчины с Марса, женщины с Венеры</a>
+
+</ul>
+<li><a href="https://www.kinopoisk.ru/">Любимые фильмы</a>
+<ul>
+<li><a href="https://filmix.co/drama/2979-titanik.html">Титаник</a>
+<li><a href="https://www.kinopoisk.ru/series/962012/">Ривердэйл</a>
+<li><a href="https://www.kinopoisk.ru/film/463724/">Великий Гэтсби</a>
+</ul>
+<li class="right"><a href="https://www.google.com/search?q=%D0%B2%D0%BA&oq=%D0%B2%D0%BA&aqs=chrome.0.69i59j35i39j0i20i131i263i433j46i433j0i433l2j0i131i433j5.353j0j1&sourceid=chrome&ie=UTF-8">Подружки</a>
+<ul>
+<li><a href="https://vk.com/polya.ro16">Полина</a>
+<li><a href="https://vk.com/idannstasia">Настя</a>
+<li><a href="https://vk.com/darauzlova">Даша</a>
+<li><a href="https://vk.com/kavinskaya0107">Полина</a>
+</ul>
+</ul>
+
+<div class="container">
+
+        <div class="first">
+            <div class="img-container"><img class="img" src="1.jpg"width="500" height="750" alt=""  > </div>
+            <div class="img-container"><img class="img" src="3.jpg"  width="500" height="750" alt="" ></div>
+            <div class="img-container"><img class="img" src="11.jpg"  width="500" height="750" alt="" ></div>
+        </div>
+    </div>
+
+
+<h3>Маша в академии vs Маша дома</h3>
+<script type="text/javascript">
+var images = new Array();
+var i = 0;
+images[0] = '5.jpg';
+images[1] = '8.jpg';
+function viewImages() {
+document.getElementById("img_main").src = images[i];
+i++;
+if (i == images.length) {
+i = 0;
+}
+setTimeout("viewImages()",5000);
+}
+</script>
+<img src="" id="img_main">
+<input value="click!" type="button" id="myButton" style="margin-left: 100px;" onclick="viewImages()">
+</body>
+</html>
