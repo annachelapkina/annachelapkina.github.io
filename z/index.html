@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Something about me</title>
+    <style>
+
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+nav::before{
+    content:"";
+    display: block;
+    height: 50 px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+ ul{
+     margin:0;
+     padding: 0;
+    height: 50px;
+ }
+
+ ul li{
+     float: left;
+ }
+
+ .link{
+     color: #fff;
+     display: block;
+     height: 50px;
+    padding: 0 30px;
+    line-height: 50px;
+ }
+
+.link:hover{
+     background: #D29D25;
+ }
+
+        .push {
+  list-style: none;
+  font-family: "Lucida Sans";
+}
+.push li {
+  position: relative;
+  padding: 20px 0 20px 40px;
+  color: #D29D25;
+  font-variant: small-caps;
+  font-weight: bold;
+  cursor: pointer;
+}
+.push li:before {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4F5151;
+  content: "";
+  left: 0;
+  transition: .3s ease-in-out;
+  top: 27px;
+}
+.push li:after {
+  position: absolute;
+  border-left: 1px dotted #4F5151;
+  width: 1px;
+  bottom: -12px;
+  content: "";
+  left: 3px;
+  top: 48px;
+}
+.push li:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
+.push li:last-child:after {content: none;}
+
+
+<p1>
+
+        html {
+    background: #ccc;
+    min-height: 100%;
+    font-family: sans-serif;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    margin: 50;
+    padding: 0 15px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+        }
+.header-tright {
+    background: #222;
+    min-height: 50px;
+    font-size: 1.5rem;
+    color: #eee;
+    margin-bottom: 40px;
+    flex-basis: 300px;
+
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-bottom {
+    background: #222;
+    min-height: 50px;
+    font-size: 1.5rem;
+    color: #eee;
+    flex-basis: 100%;
+
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        .who{
+            margin-bottom: 100px;
+        }
+
+.main {
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    margin: auto;
+    flex: auto;
+    box-sizing: border-box;
+}
+.grid {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.grid-itm {
+    margin-bottom: 30px;
+    flex-basis: calc(33.33% - 30px * 2/3);
+
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-img {
+    margin: 0 auto 20px;
+    flex: 0 1 80%;
+}
+.grid-cont{
+    flex: 0 1 100%;
+}
+.grid-title {
+    text-align: center;
+}
+
+.footer {
+    background: #222;
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    color: #eee;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .header-tright {
+        display: none;
+    }
+    .grid-itm {
+        flex-wrap: nowrap;
+        flex-basis: 100%;
+    }
+    .grid-img {
+        flex: 0 0 auto;
+    }
+    .grid-itm:nth-child(even) .grid-img {
+        margin: 0 0 0 30px;
+        order: 2;
+    }
+    .grid-itm:nth-child(odd) .grid-img {
+        margin: 0 30px 0 0;
+
+    }
+    .grid-cont {
+        flex: 1 1 auto;
+    }
+    .grid-title {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid-img {
+        display: none;
+    }
+}
+
+        .img{
+    transition: 1s;
+}
+
+.img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+body {background:url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)}
+
+.p3{
+            font-size: 24px;
+    background: #ccc;
+    min-height: 100%;
+    font-family: sans-serif;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+        }
+
+        .second{
+ width: 100%;
+    display: flex;
+    justify-content: space-between;
+        }
+
+
+        .first{
+    width: 100%;
+    display: flex;
+            justify-content: space-between;}
+        .text{
+            margin-right: 30%;
+            padding-top: 5%;
+            margin-left: 10%;
+            font-size:25px;
+        }
+
+    font-family: 'Roboto Slab', serif;
+    margin: 0 0;
+    font-size: 15px;
+
+
+  .level_1{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    background: url("annie-spratt-V705bwrTnQI-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 0px 5vw 5vw #e7fdff;
+    padding-bottom: 20%;
+    margin-bottom: 5%;
+}
+
+  .country_title{
+    font-family: 'Roboto Slab', serif;
+    color: #d1af63;
+
+    text-shadow: 1px 1px white,
+                 2px 2px #777;
+    font-size:12.5vw;
+  }
+
+  .country_title:after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 55%;
+    margin: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width .5s ease-in-out;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.country_title:hover:after  {
+    width: 20%;
+    background-color: #505f61;
+}
+
+
+  .text_1{
+    background-color: #608185;
+    padding: 5%;
+    font-family: 'Open Sans';
+    border: 0;
+    text-align: center;
+    width: 50%;
+    margin: 5% auto;
+    font-size:1.7vw;
+    color: #fff;
+    opacity: 0.9;
+    border-radius: 20px;
+  }
+
+
+  h1{
+       font-family: Brush Script MT;;
+    letter-spacing: 4px;
+    margin: 0;
+    font-size:2.1vw;
+
+  }
+  .text{
+    font-size: 50px;
+     font-family: Brush Script MT;;
+    font-size:2.2vw;
+    text-align: center;
+
+  }
+    .round {
+        border-radius: 50%;
+    }
+
+       .inner2_head{
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+        }
+
+  .container1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+font-size: 24px;
+        width: 100%;
+        height: auto;
+
+        }
+
+  .container__inner_image1{
+        display: flex;
+        margin: auto 0 auto 7%;
+        width: 50%;
+        height: auto;
+        }
+
+
+  .container__inner_text1{
+        padding: 3% 3% 6% 3%;
+        display: flex;
+      font-size: 24px;
+        flex-direction: column;
+        margin: auto 7% auto auto;
+
+        width: 50%;
+        height: auto;
+        }
+
+  .container__inner_text2{
+        padding: 3% 3% 6% 3%;
+        display: flex;
+        flex-direction: column;
+        margin: auto 0 auto 7%;
+
+        width: 50%;
+        height: auto;
+        }
+
+  .container__inner_image2{
+        display: flex;
+        margin: auto 7% auto 0;
+        width: 50%;
+        height: auto;
+        }
+
+  .container_for_comments{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 0;
+
+    margin: 3% 0 0 0;
+    padding-top: 15%;
+
+    background: url("images/5.jpg") center no-repeat;
+
+    background-size: cover;
+    box-shadow: inset 0px 0px 8vw 8vw #fff;
+    position: absolute;
+  }
+
+  .container__inner_comms{
+    display: flex;
+
+    padding: 3% 3% 5% 3%;
+    flex-direction: row;
+    margin: auto 0 auto 10%;
+
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 1160px){
+
+      *{
+        box-sizing: border-box;
+       }
+
+       .round {
+          border-radius: 50%;
+         }
+
+      .container1{
+            display: flex;
+            flex-direction: column;
+
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+
+            width: 100%;
+            height: auto;
+
+            }
+
+      .container__inner_image1{
+            display: flex;
+            width: 75%;
+            height: auto;
+            align-items: center;
+
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            }
+      .container__inner_image2{
+            display: flex;
+            width: 75%;
+            height: auto;
+            align-items: center;
+
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            }
+
+
+      .container__inner_text1{
+
+            display: flex;
+
+            width: 100%;
+            height: auto;
+
+            margin: 0 0 0 0;
+            padding: 3% 10%;
+            text-align: center;
+
+            }
+        .container__inner_text2{
+
+              display: flex;
+
+              width: 100%;
+              height: auto;
+
+              margin: 0 0 0 0;
+              padding: 3% 10%;
+              text-align: center;
+              }
+
+        .country_title{font-size:15vw;}
+        .text_1{
+          font-size:4.8vw;
+          width: 70%;}
+</style>
+</head>
+<body>
+ <nav>
+        <ul style="list-style-type:none">
+            <li><a class="link" href="https://www.instagram.com/p/CHFFbkNp2GS/?igshid=6pfziv1e3ahc" > inst</a></li>
+            <li><a class="link" href="https://vk.com/annachelapkina" > vk  </a></li>
+            <li><a class="link" target="_blank" href="www.linkedin.com/in/annachelapkina"> linkedin</a> </li>
+        </ul>
+    </nav>
+    <br><br>
+<div class="container">
+ <div class="second">
+
+</div>
+</div>
+
+ <div class="first">
+            <div class="img-container"><img class="img" src="rZkCZ-zNtFo.jpg"width="550" height="750" alt=""  > </div>
+            <div class="text"> <p3>Something about me</p3>
+
+<ul class="push">
+<li>19 years old. Currently live in Minsk </li>
+  <li>Little girl with big dreams</li>
+  <li>A real Scorpion. Warning!</li>
+  <li>Fond of taking photos</li>
+ <li> In love with red lipstick and u</li>
+</ul>
+</div>
+             </div>
+
+ <br> <br>  <br>  <br>
+
+ <div class="container1">
+        <div class="container__inner_text2">
+              <div class="text" ><br>
+
+I always try to find inspiration in small things. It can be a smile of a person dear to me, a sunbeam and the last sunset. And that's what makes me feel alive
+              </div>
+        </div>
+
+        <div class="container__inner_image2">
+              <image src="LkwGQJIbxZI.jpg" width=100% class="round" alt="no_image">
+        </div>
+  </div>
+
+  <div class="container1">
+    <div class="container__inner_image1">
+          <image src="iONr2ssBsk8.jpg" width=100% class="round" alt="no_image">
+    </div>
+
+    <div class="container__inner_text1">
+          <div class="text"  ><br>
+           I also like to dream. This may sound strange, but it's my dreams that keep me going. And I am very happy that I have people who will always support and help me. Love u
+          </div>
+    </div>
+</div>
+   <br> <br>  <br>  <br>
+    <div class="container">
+
+        <div class="first">
+            <div class="img-container"><img class="img" src="r91kbETKc1Q.jpg"width="500" height="750" alt=""  > </div>
+            <div class="img-container"><img class="img" src="SytWLxlHyG4.jpg"  width="500" height="750" alt="" ></div>
+            <div class="img-container"><img class="img" src="8.jpg"  width="500" height="750" alt="" ></div>
+        </div>
+    </div>
+<div class="container">
+ <div class="second">
+</div>
+</div>
+</body>
+</html>
